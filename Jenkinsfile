@@ -39,6 +39,12 @@ pipeline {
                 sh 'docker run -d -p 80:80 --name elonmusk mgiselle/${JOB_NAME}:latest'
            }
        }
+
+       stage('prueba') {
+           steps {
+                echo 'Esto es un nuevo cambio'
+           }
+       }
    }
    
 
